@@ -10,15 +10,21 @@
 <body>
     <div class="topbar">
         <p class="topbar-left">Window name</p>
-
-        <p>ArcadeOS</p>
-
-        <p class="topbar-right" id="time">00:00:00</p>
+        <p id="welcome-open" class="open-btn">ArcadeOS</p>
+        <p id="time" class="topbar-right">00:00:00</p>
     </div>
 
-    <div class="window">
-        <h1>Welcome to ArcadeOS!</h1>
-        <p>Soon, here will be a couple of retro arcade games, like pacman or spacewar. Stay tuned!</p>
+    <div id="welcome" class="window">
+        <div id="welcome-header" class="window-header">
+            <span></span>
+            <p>Welcome</p>
+            <div id="welcome-close" class="close-btn"></div>
+        </div>
+
+        <div class="window-content">
+            <h1>Welcome to ArcadeOS!</h1>
+            <p>Soon, here will be a couple of retro arcade games, like pacman or spacewar. Stay tuned!</p>
+        </div>
     </div>
 
     <script src="script.js"></script>

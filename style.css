@@ -10,6 +10,7 @@ body {
 .topbar {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    align-items: center;
 
     background: #2d0050;
 }
@@ -32,5 +33,39 @@ body {
     background: #110122;
     border: solid;
     width: 500px;
-    padding: 20px;
+}
+
+.window-header {
+    display: grid;
+
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    border-bottom: solid;
+    text-align: center;
+    padding: 5px 7px;
+
+    cursor: default;
+}
+
+.window-header p {
+    margin: 0px;
+}
+
+.window-content {
+    padding: 0px 20px 10px 20px;
+}
+
+.open-btn {
+    cursor: pointer;
+}
+
+.close-btn {
+    width: 16px;
+    height: 16px;
+    background: #ff3366;
+    border-radius: 100%;
+    cursor: pointer;
+
+    justify-self: end
 }
