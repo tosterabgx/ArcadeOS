@@ -7,65 +7,98 @@ body {
   padding: 0px;
 }
 
-.topbar {
-    display: grid;
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+#topbar {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 
-    background: #2d0050;
+  font-size: 20px;
+
+  background: #110122;
+  border-bottom: solid;
+
+  padding: 16px;
 }
 
-.topbar-left {
-    margin-left: 16px;
+.topbar-middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.status {
+  font-size: 10px;
+  color: #aaa;
 }
 
 .topbar-right {
-    justify-self: end;
-    margin-right: 16px;
+  justify-self: end;
 }
 
 .window {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-    background: #110122;
-    border: solid;
-    width: 500px;
+  background: #110122;
+  border: solid;
+  width: 500px;
 }
 
 .window-header {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 1fr auto 1fr;
-    align-items: center;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
 
-    border-bottom: solid;
-    text-align: center;
-    padding: 5px 7px;
+  border-bottom: solid;
+  text-align: center;
+  padding: 5px 7px;
 
-    cursor: default;
-}
-
-.window-header p {
-    margin: 0px;
+  cursor: default;
 }
 
 .window-content {
-    padding: 0px 20px 10px 20px;
-}
-
-.open-btn {
-    cursor: pointer;
+  padding: 0px 20px 10px 20px;
 }
 
 .close-btn {
-    width: 16px;
-    height: 16px;
-    background: #ff3366;
-    border-radius: 100%;
-    cursor: pointer;
+  width: 16px;
+  height: 16px;
+  background: #ff3366;
+  border-radius: 100%;
+  cursor: pointer;
 
-    justify-self: end
+  justify-self: end;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+#desktop-apps {
+  margin: 8px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  text-align: center;
+  padding: 12px;
+  width: 150px;
+}
+
+.icon span {
+  margin: 0px;
+}
+
+.icon img {
+  width: 64px;
+  height: 64px;
+  border-radius: 100%;
 }

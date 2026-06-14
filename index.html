@@ -1,32 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArcadeOS</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArcadeOS</title>
 
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="topbar">
-        <p class="topbar-left">Window name</p>
-        <p id="welcome-open" class="open-btn">ArcadeOS</p>
-        <p id="time" class="topbar-right">00:00:00</p>
+  <div id="topbar">
+    <span class="topbar-left">🕹️</span>
+    <div class="topbar-middle">
+      <span>ArcadeOS</span>
+      <span class="status">Playing for <span id="time-played">0 minutes</span></span>
+    </div>
+    <span id="clock" class="topbar-right">00:00:00</span>
+  </div>
+
+  <div id="desktop-apps">
+    <div id="welcome-icon" class="icon">
+      <img src="./images/info.png">
+      <span>Info</span>
     </div>
 
-    <div id="welcome" class="window">
-        <div id="welcome-header" class="window-header">
-            <span></span>
-            <p>Welcome</p>
-            <div id="welcome-close" class="close-btn"></div>
-        </div>
+    <div id="space-invaders-icon" class="icon">
+      <img src="./images/space_invaders.jpg">
+      <span>Space Invaders</span>
+    </div>
+  </div>
 
-        <div class="window-content">
-            <h1>Welcome to ArcadeOS!</h1>
-            <p>Soon, here will be a couple of retro arcade games, like pacman or spacewar. Stay tuned!</p>
-        </div>
+
+
+  <div id="welcome" class="window">
+    <div id="welcome-header" class="window-header">
+      <span></span>
+      <span>Welcome</span>
+      <div id="welcome-close" class="close-btn"></div>
     </div>
 
-    <script src="script.js"></script>
+    <div class="window-content">
+      <h1>Welcome to ArcadeOS!</h1>
+      <p>Soon, here will be a couple of retro arcade games, like pacman or spacewar. Stay tuned!</p>
+    </div>
+  </div>
+
+  <div id="space-invaders" class="window" style="display: none;">
+    <div id="space-invaders-header" class="window-header">
+      <span></span>
+      <span>Space Invaders</span>
+      <div id="space-invaders-close" class="close-btn"></div>
+    </div>
+
+    <div class="window-content">
+      <h2>Pew, pew, shoot 'em all!</h2>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
+
 </html>
