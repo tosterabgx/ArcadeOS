@@ -18,7 +18,7 @@ body {
   background: #110122;
   border-bottom: solid;
 
-  padding: 16px;
+  padding: 10px 16px;
 }
 
 .topbar-middle {
@@ -44,7 +44,7 @@ body {
 
   background: #110122;
   border: solid;
-  width: 500px;
+  width: fit-content;
 }
 
 .window-header {
@@ -101,4 +101,8 @@ body {
   width: 64px;
   height: 64px;
   border-radius: 100%;
+}
+
+#welcome {
+  width: 500px;
 }

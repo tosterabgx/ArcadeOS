@@ -75,11 +75,25 @@ function dragElement(element) {
 
 function closeWindow(element) {
   element.style.display = "none";
+
+  switch (element.id) {
+    case "space-invaders":
+      game.stop();
+      break;
+  }
 }
 
 function openWindow(element) {
-  element.style.display = "block";
-  handleWindowTap(element)
+  if (element.style.display == "none") {
+    element.style.display = "block";
+    handleWindowTap(element);
+
+    switch (element.id) {
+      case "space-invaders":
+        game.init();
+        break;
+    }
+  }
 }
 
 function handleWindowTap(element) {
