@@ -1,5 +1,3 @@
-console.log("Space Invaders game loaded successfully!");
-
 class GameObject {
   constructor(x, y, width, height, color) {
     this.x = x;

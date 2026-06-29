@@ -74,23 +74,29 @@ function dragElement(element) {
 }
 
 function closeWindow(element) {
-  element.style.display = "none";
+  element.classList.add("hidden");
 
   switch (element.id) {
     case "space-invaders":
       game.stop();
       break;
+    case "snake":
+      snakeStop()
+      break;
   }
 }
 
 function openWindow(element) {
-  if (element.style.display == "none") {
-    element.style.display = "block";
+  if (element.classList.contains("hidden")) {
+    element.classList.remove("hidden");
     handleWindowTap(element);
 
     switch (element.id) {
       case "space-invaders":
         game.init();
+        break;
+      case "snake":
+        snakeInit()
         break;
     }
   }

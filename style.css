@@ -64,6 +64,10 @@ body {
   padding: 0px 20px 10px 20px;
 }
 
+.hidden {
+  display: none;
+}
+
 .close-btn {
   width: 16px;
   height: 16px;

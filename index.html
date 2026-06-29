@@ -29,6 +29,11 @@
       <img src="./images/space_invaders.jpg">
       <span>Space Invaders</span>
     </div>
+
+    <div id="snake-icon" class="icon">
+      <img src="./images/snake.png">
+      <span>Snake</span>
+    </div>
   </div>
 
 
@@ -41,11 +46,11 @@
 
     <div class="window-content">
       <h1>Welcome to ArcadeOS!</h1>
-      <p>Soon, here will be a couple of retro arcade games, like pacman or spacewar. Stay tuned!</p>
+      <p>A small WebOS with retro arcade games! There are only two for now, but more are coming. Stay tuned!</p>
     </div>
   </div>
 
-  <div id="space-invaders" class="window" style="display: none;">
+  <div id="space-invaders" class="window hidden">
     <div id="space-invaders-header" class="window-header">
       <span></span>
       <span>Space Invaders</span>
@@ -53,12 +58,25 @@
     </div>
 
     <div class="window-content">
-      <canvas id="space-invaders-canvas" width="800" height="600"></canvas>
+      <canvas id="space-invaders-canvas" width="800" height="600">Your browser does not support canvas! :(</canvas>
+    </div>
+  </div>
+
+  <div id="snake" class="window hidden">
+    <div id="snake-header" class="window-header">
+      <span></span>
+      <span>Snake</span>
+      <div id="snake-close" class="close-btn"></div>
+    </div>
+
+    <div class="window-content">
+      <canvas id="snake-canvas" width="800" height="600">Your browser does not support canvas! :(</canvas>
     </div>
   </div>
 
   <script src="script.js"></script>
   <script src="games/space-invaders.js"></script>
+  <script src="games/snake.js"></script>
 </body>
 
 </html>
